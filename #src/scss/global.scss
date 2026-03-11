@@ -1,4 +1,5 @@
 body {
+	background: var(--bg-color);
 	&::-webkit-scrollbar {
 		width: 13px;
 		height: 13px;
@@ -23,4 +24,79 @@ body {
 
 .main-content {
 	flex: 1 1 auto;
+}
+
+.block-container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.my-100 {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.mt-100 {
+	margin-top: 100px;
+}
+.mb-100 {
+	margin-bottom: 100px;
+}
+
+.my-50 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.mt-50 {
+	margin-top: 50px;
+}
+.mb-50 {
+	margin-bottom: 50px;
+}
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 24px 35px;
+	border-radius: 10px;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	transition: all .3s ease;
+}
+
+.btn-text {
+	position: relative;
+	z-index: 2;
+}
+
+.main-btn {
+	background: var(--main-color);
+	color: #fff;
+	&:hover {
+		background: var(--red-color);
+	}
+}
+
+.social-buttons {
+	display: flex;
+	gap: 10px;
+	&__item {
+		width: 60px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 10px;
+		border: 1px solid #CDE0EF;
+		background: transparent;
+		transition: all .3s ease;
+		&:hover {
+			background: #fff;
+			border-color: #fff;
+		}
+	}
 }
