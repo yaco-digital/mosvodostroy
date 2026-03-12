@@ -1,0 +1,169 @@
+.site-footer {
+	position: relative;
+	background: #00294A;
+	padding: 90px 0;
+	&__body {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 30px;
+		position: relative;
+	}
+	.social-buttons {
+		flex-direction: column;
+	}
+}
+
+.footer-logo {
+	width: 275px;
+	padding-right: 60px;
+	flex: 0 0 auto;
+	display: flex;
+	align-items: center;
+	img {
+		max-width: 100%;
+		object-fit: contain;
+	}
+}
+
+.footer-menu {
+	display: flex;
+	flex-direction: column;
+	ul {
+		display: flex;
+		gap: 30px;
+		li {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			a {
+				color: #fff;
+				font-size: 21px;
+				line-height: 130%;
+				font-weight: 600;
+			}
+			ul {
+				flex-direction: column;
+				gap: 10px;
+				li {
+					gap: 0;
+					a {
+						font-size: 14px;
+						line-height: 150%;
+						font-weight: 400;
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer-contacts {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	&__worktime {
+		display: flex;
+		flex-direction: column;
+		color: #fff;
+		&-title {
+			font-size: 16px;
+			line-height: 150%;
+			font-weight: 600;
+		}
+		&-desc {
+			font-size: 14px;
+			line-height: 150%;
+			font-weight: 400;
+		}
+	}
+	&__links {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		&-item {
+			color: #fff;
+			font-size: 16px;
+			line-height: 130%;
+			font-weight: 600;
+		}
+	}
+	&__address {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		&-item {
+			display: flex;
+			flex-direction: column;
+			color: #fff;
+		}
+		&-title {
+			font-size: 16px;
+			line-height: 150%;
+			font-weight: 600;
+		}
+		&-desc {
+			font-size: 14px;
+			line-height: 150%;
+			font-weight: 400;
+		}
+	}
+}
+
+.copyright-block {
+	width: 270px;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.site-copyright {
+	color: #fff;
+	font-size: 14px;
+	line-height: 150%;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.footer-links {
+	display: flex;
+	flex-direction: column;
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+	&__value {
+		color: #fff;
+		font-size: 14px;
+		line-height: 150%;
+		font-weight: 400;
+		text-decoration: underline;
+	}
+}
+
+.study-copyright {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-top: 5px;
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+	&__title {
+		color: #fff;
+		font-size: 14px;
+		line-height: 150%;
+		font-weight: 400;
+	}
+	&__link {
+		color: #fff;
+		font-size: 14px;
+		line-height: 150%;
+		font-weight: 400;
+		text-decoration: underline;
+	}
+}

@@ -113,8 +113,6 @@
 }
 
 .header-menu .services-submenu {
-	border: none;
-	padding: 30px 0;
 	&__item {
 		margin-bottom: 30px;
 	}
@@ -122,6 +120,11 @@
 		display: flex;
 		align-items: center;
 		gap: 25px;
+		margin-bottom: 30px;
+		color: var(--main-color);
+		&:hover {
+			color: var(--red-color);
+		}
 	}
 	&__icon {
 		width: 50px;
@@ -136,14 +139,13 @@
 		}
 	}
 	&__value {
-		color: var(--main-color);
 		font-size: 19px;
 		line-height: 25px;
 		font-weight: 600;
 	}
 	ul {
 		position: relative;
-		top: 0;
+		top: 0!important;
 		border: none;
 		padding: 0;
 		flex-direction: row;
@@ -155,6 +157,10 @@
 				padding: 5px 10px;
 				border-radius: 10px;
 				background: #E3EDF8;
+				&:hover {
+					background: var(--main-color);
+					color: #fff;
+				}
 			}
 		}
 	}
@@ -181,6 +187,7 @@
 					background: var(--bg-color);
 					border: 1px solid #E3EDF8;
 					padding: 30px 40px;
+					border-radius: 0 0 20px 20px;
 					opacity: 0;
 					visibility: hidden;
 					li {
@@ -233,6 +240,34 @@
 					visibility: hidden;
 				}
 			}
+		}
+	}
+	.header-menu .services-submenu {
+		flex-direction: row;
+		flex-wrap: wrap;
+		border: none;
+		padding: 20px 0 0;
+		margin: 0 -10px;
+		gap: 0;
+		max-height: calc(100vh - 170px);
+		overflow: auto;
+		border-radius: 0 0 20px 20px;
+		&::-webkit-scrollbar {
+			width: 10px;
+			height: 10px;
+		}
+		&::-webkit-scrollbar-track {
+			background-color: #fff;
+			border-radius: 250px;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: var(--main-color);
+			border-radius: 250px;
+			border: 2px solid #fff;
+		}
+		&__item {
+			width: calc(33.33% - 20px);
+			margin: 10px 10px 30px;
 		}
 	}
 }

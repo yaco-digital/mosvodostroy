@@ -1,0 +1,142 @@
+.hero-section {
+	position: relative;
+	padding-top: 20px;
+}
+
+.hero-block {
+	display: flex;
+	gap: 20px;
+}
+
+.hero-banner {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border-radius: 20px;
+	position: relative;
+	&__image {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 1;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		padding: 60px;
+		gap: 25px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 2;
+	}
+	&__heading {
+		color: var(--main-color);
+		font-size: 50px;
+		line-height: 54px;
+		font-weight: 600;
+	}
+	&__subheading {
+		color: var(--black-color);
+		font-size: 16px;
+		line-height: 140%;
+		font-weight: 400;
+	}
+}
+
+.hero-sidebar {
+	width: 375px;
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.hero-cta {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 20px;
+	background: #fff;
+	&__title {
+		color: var(--main-color);
+		font-size: 21px;
+		line-height: 130%;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	&__item {
+		width: 100%;
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	&__privacy {
+		display: flex;
+		margin-top: 10px;
+		.fake-checkbox {
+			background: #EDF4FB;
+		}
+	}
+	&__submit {
+		display: flex;
+		flex-direction: column;
+		margin-top: 10px;
+		input {
+			display: none;
+			visibility: hidden;
+		}
+	}
+	input, textarea, select {
+		background: var(--bg-color);
+		border-color: var(--bg-color);
+		box-shadow: 0 0 0 1px var(--bg-color);
+		font-size: 16px;
+		font-weight: 500;
+	}
+	input, textarea {
+		&:hover,
+		&:focus {
+			border-color: var(--main-color);
+		}
+	}
+	select {
+		cursor: pointer;
+		&:hover,
+		&:focus {
+			box-shadow: 0 0 0 1px var(--main-color);
+		}
+	}
+}
+
+.hero-reviews {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 100%;
+	border-radius: 20px;
+	padding: 30px;
+	background: #E3EDF8;
+	position: relative;
+	&__title {
+		color: var(--main-color);
+		font-size: 22px;
+		line-height: 28px;
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+}

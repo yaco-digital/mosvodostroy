@@ -67,10 +67,23 @@ img {
 input, textarea {
 	background: #FFFFFF;
 	border: 1px solid #e6e6e6;
-	padding: 12px 20px;
+	padding: 18px 20px;
 	max-width: 100%;
+	border-radius: 10px;
 	transition: all .3s ease;
 	&:focus {
 		border-color: var(--main-color);
 	}
+}
+
+select {
+	font-size: 16px;
+	font-family: inherit;
+	background: #FFFFFF;
+	border-right: 20px solid transparent;
+	box-shadow: 0 0 0 1px #e6e6e6;
+	padding: 18px 20px;
+	max-width: 100%;
+	border-radius: 10px;
+	transition: all .3s ease;
 }

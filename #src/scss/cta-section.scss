@@ -1,0 +1,61 @@
+.cta-section {
+	position: relative;
+}
+
+.cta-block {
+	display: flex;
+	flex-direction: column;
+	padding: 70px 80px;
+	border-radius: 20px;
+	background: var(--red-color);
+	.block-heading {
+		margin-bottom: 30px;
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -8px;
+	}
+	&__item {
+		width: calc(33.33% - 16px);
+		margin: 8px;
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+		input {
+			flex: 1 1 auto;
+		}
+	}
+	&__submit {
+		width: auto;
+		margin: 8px;
+		display: flex;
+		flex-direction: column;
+		input {
+			display: none;
+			visibility: hidden;
+		}
+	}
+	&__privacy {
+		margin-top: 15px;
+		color: #fff;
+	}
+	.btn {
+		&:hover {
+			background: var(--sec-color);
+		}
+	}
+	.cta-privacy label {
+		font-size: 13px;
+		.fake-checkbox {
+			border-color: #fff;
+			opacity: 1;
+			&:before {
+				background: #fff;
+			}
+		}
+		a {
+			color: #fff;
+		}
+	}
+}

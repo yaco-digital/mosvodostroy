@@ -1,0 +1,54 @@
+.fancybox-container {
+	backdrop-filter: blur(10px);
+}
+.fancybox-bg {
+	background: #0000005d;
+}
+
+.modal {
+	border-radius: 20px;
+	padding: 50px 60px;
+}
+
+.modal-title {
+	text-align: center;
+	color: var(--main-color);
+	font-size: 21px;
+	line-height: 130%;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.modal-callback {
+	width: 440px;
+}
+
+.modal-form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	&__item {
+		display: flex;
+		flex-direction: column;
+	}
+	&__privacy {
+		margin-top: 10px;
+	}
+	&__submit {
+		display: flex;
+		flex-direction: column;
+		margin-top: 10px;
+		input {
+			display: none;
+			visibility: hidden;
+		}
+	}
+	input {
+		background-color: var(--bg-color);
+		border-color: var(--bg-color);
+		&:hover,
+		&:focus {
+			border-color: var(--main-color);
+		}
+	}
+}
