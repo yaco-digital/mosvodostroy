@@ -1,13 +1,34 @@
-// sub menu script
-let SubMenuList = jQuery('.header-menu ul > li').children('ul');
+// 2 уровень меню
+let SubMenuList = jQuery('.header-menu > ul > li > ul');
 let SubMenuItem = jQuery(SubMenuList).closest('li');
+
+let footerSubMenuList = jQuery('.footer-menu > ul > li > ul');
+let footerSubMenuItem = jQuery(footerSubMenuList).closest('li');
 
 SubMenuItem.addClass('sub-menu-item');
 SubMenuList.addClass("sub-menu-list");
 
+footerSubMenuItem.addClass('footer-sub-menu-item');
+footerSubMenuList.addClass("footer-sub-menu-list");
+
 jQuery(SubMenuItem).click(function () {
 	jQuery(this).toggleClass('show');
 	jQuery(this).children('.sub-menu-list').toggleClass('show');
+});
+
+jQuery(footerSubMenuItem).click(function () {
+	jQuery(this).toggleClass('show');
+	jQuery(this).children('.footer-sub-menu-list').toggleClass('show');
+});
+
+// функционал открытия меню
+jQuery(document).ready(function () {
+	let mobileMenuWrap = jQuery(".site-header__wrap");
+	jQuery(".burger-button").click(function () {
+		jQuery(this).toggleClass('open');
+		jQuery(mobileMenuWrap).toggleClass('show');
+		jQuery("body").toggleClass('overflow-hidden');
+	});
 });
 
 // custom checkbox
@@ -30,12 +51,17 @@ $('.reviews-badge-slider').slick({
 	dots: false,
 	responsive: [
 		{
-			breakpoint: 992,
+			breakpoint: 1201,
 			settings: {
 				slidesToShow: 1,
-				slidesToScroll: 1,
-				dots: true,
-				arrows: false
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
 			}
 		}
 	]
@@ -62,6 +88,13 @@ $('.logos-cards-slider').slick({
 			breakpoint: 992,
 			settings: {
 				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 2,
 				slidesToScroll: 1
 			}
 		}

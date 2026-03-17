@@ -87,3 +87,9 @@ select {
 	border-radius: 10px;
 	transition: all .3s ease;
 }
+
+@media all and (max-width: 1200px) {
+	input, textarea, select {
+		padding: 13px 20px;
+	}
+}

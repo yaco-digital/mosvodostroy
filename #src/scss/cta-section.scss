@@ -59,3 +59,36 @@
 		}
 	}
 }
+
+@media all and (max-width: 1200px) {
+	.cta-block {
+		padding: 40px 50px;
+	}
+}
+
+@media all and (max-width: 991px) {
+	.cta-block__submit {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.cta-block {
+		padding: 30px 20px 100px;
+		position: relative;
+	}
+	.cta-block__item {
+		width: 100%;
+	}
+	.cta-block__submit {
+		position: absolute;
+		bottom: 20px;
+		right: 10px;
+		left: 10px;
+		width: auto;
+		z-index: 3;
+	}
+	.cta-block .block-heading {
+		margin-bottom: 20px;
+	}
+}

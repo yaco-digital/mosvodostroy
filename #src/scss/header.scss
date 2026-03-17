@@ -1,5 +1,17 @@
 .site-header {
 	position: relative;
+	&__mobile {
+		padding: 20px;
+		background: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+		@media all and (min-width: 992px) {
+			display: none;
+			visibility: hidden;
+		}
+	}
 	&__main {
 		padding: 20px 0;
 		.block-container {
@@ -18,12 +30,28 @@
 	display: flex;
 	align-items: center;
 	gap: 25px;
+	&--desktop {
+		@media all and (max-width: 991px) {
+			display: none;
+			visibility: hidden;
+		}
+	}
+	&--mobile {
+		width: 170px;
+		height: 40px;
+		margin-right: auto;
+		@media all and (min-width: 992px) {
+			display: none;
+			visibility: hidden;
+		}
+	}
 	&__image {
 		width: 170px;
 		display: flex;
 		align-items: center;
 		img {
 			max-width: 100%;
+			max-height: 100%;
 			object-fit: contain;
 		}
 	}
@@ -269,5 +297,56 @@
 			width: calc(33.33% - 20px);
 			margin: 10px 10px 30px;
 		}
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.site-header__main .block-container {
+		gap: 20px;
+	}
+	.header-logo {
+		width: 150px;
+		gap: 10px;
+		&__delim,
+		&__desc {
+			display: none;
+			visibility: hidden;
+		}
+	}
+	.header-contacts {
+		gap: 20px;
+	}
+	.header-bar .social-buttons {
+		margin-left: 10px;
+	}
+	.header-contacts__title {
+		font-size: 18px;
+	}
+	.header-bar .btn {
+		padding: 15px 25px;
+	}
+	.header-menu {
+		gap: 20px;
+	}
+	.header-menu ul {
+		gap: 20px;
+	}
+}
+
+.header-phone-mobile {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--main-color);
+	font-size: 21px;
+	transform: rotate(-45deg);
+}
+
+@media all and (max-width: 575px) {
+	.site-header__mobile {
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }

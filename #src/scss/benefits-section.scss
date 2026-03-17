@@ -62,3 +62,51 @@
 		font-weight: 400;
 	}
 }
+
+@media all and (max-width: 1200px) {
+	.numbers-cards__item {
+		padding: 20px;
+	}
+	.benefits-cards__item {
+		padding: 20px;
+	}
+}
+
+@media all and (max-width: 991px) {
+	.numbers-cards__value {
+		font-size: 36px;
+	}
+	.benefits-cards__item {
+		width: calc(50% - 20px);
+	}
+}
+
+@media all and (max-width: 768px) {
+	.numbers-cards__item {
+		width: calc(100% - 20px);
+	}
+}
+
+@media all and (max-width: 575px) {
+	.numbers-cards {
+		margin: 0 -5px;
+		&__item {
+			width: calc(100% - 10px);
+			margin: 5px;
+			gap: 10px;
+		}
+		&__value {
+			font-size: 29px;
+		}
+	}
+	.benefits-cards {
+		margin: 0 -5px;
+		&__item {
+			width: calc(100% - 10px);
+			margin: 5px;
+		}
+		&__title {
+			font-size: 20px;
+		}
+	}
+}

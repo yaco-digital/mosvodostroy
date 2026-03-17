@@ -59,3 +59,42 @@
 		bottom: 20px;
 	}
 }
+
+@media all and (max-width: 1200px) {
+	.services-small-cards__item {
+		padding: 20px;
+		gap: 15px;
+	}
+	.services-small-cards__title {
+		font-size: 18px;
+	}
+	.services-small-cards__image {
+		width: 45px;
+		height: 45px;
+	}
+	.services-small-cards__content {
+		gap: 5px;
+	}
+}
+
+@media all and (max-width: 991px) {
+	.services-small-cards__item {
+		width: calc(50% - 20px);
+	}
+}
+
+@media all and (max-width: 768px) {
+	.services-small-cards {
+		margin: -10px;
+		&__item {
+			width: calc(50% - 10px);
+			margin: 5px;
+		}
+	}
+}
+
+@media all and (max-width: 575px) {
+	.services-small-cards__item {
+		width: calc(100% - 10px);
+	}
+}

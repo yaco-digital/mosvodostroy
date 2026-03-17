@@ -7,12 +7,17 @@ $('.reviews-badge-slider').slick({
 	dots: false,
 	responsive: [
 		{
-			breakpoint: 992,
+			breakpoint: 1201,
 			settings: {
 				slidesToShow: 1,
-				slidesToScroll: 1,
-				dots: true,
-				arrows: false
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
 			}
 		}
 	]
@@ -39,6 +44,13 @@ $('.logos-cards-slider').slick({
 			breakpoint: 992,
 			settings: {
 				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 2,
 				slidesToScroll: 1
 			}
 		}

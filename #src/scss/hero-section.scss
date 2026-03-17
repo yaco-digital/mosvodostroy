@@ -140,3 +140,83 @@
 		margin-bottom: 15px;
 	}
 }
+
+@media all and (max-width: 1200px) {
+	.hero-block {
+		gap: 10px;
+	}
+	.hero-sidebar {
+		width: 300px;
+		gap: 10px;
+	}
+	.hero-cta {
+		padding: 20px;
+	}
+	.hero-reviews {
+		padding: 20px;
+	}
+	.hero-banner {
+		&__content {
+			padding: 40px;
+			gap: 20px;
+		}
+		&__heading {
+			font-size: 36px;
+			line-height: 42px;
+		}
+	}
+	.hero-reviews__title {
+		font-size: 20px;
+	}
+}
+
+@media all and (max-width: 991px) {
+	.hero-block {
+		flex-direction: column;
+	}
+	.hero-sidebar {
+		width: 100%;
+	}
+	.hero-cta__form {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.hero-cta__item {
+		width: calc(33.33% - 10px);
+	}
+	.hero-cta__privacy {
+		width: 100%;
+	}
+	.hero-cta__submit {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.hero-banner__content {
+		padding: 20px;
+		gap: 10px;
+	}
+	.hero-banner__heading {
+		font-size: 29px;
+		line-height: 32px;
+	}
+	.hero-banner__subheading {
+		font-size: 14px;
+	}
+	.hero-cta__item {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 575px) {
+	.hero-banner {
+		height: 370px;
+	}
+	.hero-banner__heading {
+		font-size: 26px;
+	}
+	.hero-banner__content {
+		padding: 15px;
+	}
+}

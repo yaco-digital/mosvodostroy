@@ -326,3 +326,99 @@ body {
 		}
 	}
 }
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+@media all and (max-width: 1200px) {
+	.block-container {
+		max-width: 900px;
+	}
+	.social-buttons__item {
+		width: 50px;
+		height: 50px;
+	}
+	.block-heading {
+		&__title {
+			font-size: 32px;
+		}
+	}
+	.screen-section {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+@media all and (max-width: 991px) {
+	.block-container {
+		max-width: 700px;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.block-container {
+		max-width: 500px;
+	}
+	.my-100 {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.mt-100 {
+		margin-top: 50px;
+	}
+	.mb-100 {
+		margin-bottom: 50px;
+	}
+	.my-50 {
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	.mt-50 {
+		margin-top: 25px;
+	}
+	.mb-50 {
+		margin-bottom: 25px;
+	}
+	.block-heading {
+		margin-bottom: 30px;
+		&__title {
+			font-size: 28px;
+		}
+	}
+	.btn {
+		padding: 18px 35px;
+		font-size: 14px;
+	}
+}
+
+@media all and (max-width: 575px) {
+	.block-container {
+		max-width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.block-heading {
+		margin-bottom: 20px;
+		&__title {
+			font-size: 24px;
+			line-height: 130%;
+		}
+	}
+	.screen-section {
+		border-radius: 20px;
+		margin-left: 0;
+		margin-right: 0;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.block-more-btn {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+	}
+	.video-button {
+		width: 50px;
+		height: 50px;
+	}
+}
