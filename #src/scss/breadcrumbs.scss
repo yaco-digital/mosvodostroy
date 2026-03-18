@@ -1,0 +1,36 @@
+.breadcrumbs-block {
+	padding: 40px 0;
+}
+
+.breadcrumbs {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	color: rgba(35, 45, 53, 0.50);
+	font-size: 14px;
+	line-height: 150%;
+	font-weight: 400;
+	> span {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+		span {
+			&:last-child {
+				color: var(--black-color);
+			}
+		}
+	}
+	a {
+		color: rgba(35, 45, 53, 0.50);
+		transition: all .3s ease;
+		&:hover {
+			color: var(--main-color);
+		}
+	}
+}
+
+@media all and (max-width: 575px) {
+	.breadcrumbs-block {
+		padding: 15px 0;
+	}
+}

@@ -173,10 +173,14 @@
 			margin: 5px;
 		}
 	}
+	.projects-cards.tablet-overflow {
+		margin-left: -15px;
+		margin-right: -15px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 	.projects-cards.tablet-overflow .projects-cards__item {
 		width: 300px;
-		margin-left: 0;
-		margin-right: 10px;
 	}
 	.projects-cards__image {
 		height: 180px;

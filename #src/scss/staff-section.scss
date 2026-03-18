@@ -1,0 +1,28 @@
+.staff-section {
+	position: relative;
+}
+
+.staff-banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	border-radius: 48px;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+@media all and (max-width: 991px) {
+	.staff-banner {
+		border-radius: 30px;
+	}
+}
+
+@media all and (max-width: 575px) {
+	.staff-banner {
+		border-radius: 20px;
+	}
+}

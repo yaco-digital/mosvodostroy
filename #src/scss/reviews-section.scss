@@ -195,10 +195,14 @@
 			margin: 5px;
 		}
 	}
+	.reviews-cards.tablet-overflow {
+		margin-left: -15px;
+		margin-right: -15px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 	.reviews-cards.tablet-overflow .reviews-cards__item {
 		width: 300px;
-		margin-left: 0;
-		margin-right: 10px;
 	}
 	.reviews-cards__text {
 		font-size: 14px;

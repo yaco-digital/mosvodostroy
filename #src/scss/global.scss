@@ -35,6 +35,17 @@ body {
 
 .block-heading {
 	margin-bottom: 40px;
+	&.flex {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+		.block-heading__title {
+			width: 45%;
+		}
+		.block-heading__text {
+			width: 55%;
+		}
+	}
 	&__title {
 		color: var(--main-color);
 		font-size: 42px;
@@ -42,6 +53,14 @@ body {
 		font-weight: 600;
 		&.white {
 			color: #fff;
+		}
+	}
+	&__text {
+		color: var(--black-color);
+		font-size: 16px;
+		line-height: 150%;
+		p {
+			margin: 20px 0;
 		}
 	}
 }
@@ -154,6 +173,9 @@ body {
 	padding-top: 90px;
 	padding-bottom: 90px;
 	background: #E3EDF8;
+	&--white {
+		background: #fff;
+	}
 }
 
 .block-more-btn {
@@ -380,10 +402,23 @@ body {
 	.mb-50 {
 		margin-bottom: 25px;
 	}
+	.screen-section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 	.block-heading {
 		margin-bottom: 30px;
 		&__title {
 			font-size: 28px;
+		}
+		&.flex {
+			flex-direction: column;
+			align-items: stretch;
+			gap: 0;
+			.block-heading__title,
+			.block-heading__text {
+				width: 100%;
+			}
 		}
 	}
 	.btn {
