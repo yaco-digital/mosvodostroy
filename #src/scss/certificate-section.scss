@@ -100,6 +100,16 @@
 }
 
 @media all and (max-width: 575px) {
+	.certificate-cards {
+		margin: -5px;
+		&__item {
+			width: calc(50% - 10px);
+			margin: 5px;
+		}
+		&__content {
+			margin-top: 10px;
+		}
+	}
 	.certificate-cards__image {
 		height: 130px;
 		border-radius: 10px;

@@ -1192,6 +1192,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btn {
+  font-size: 16px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1202,6 +1203,9 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease;
+}
+.btn--small {
+  padding: 12px 25px;
 }
 
 .btn-text {
@@ -1221,6 +1225,16 @@ body::-webkit-scrollbar-thumb {
 }
 .main-btn--red:hover {
   background: var(--main-color);
+}
+
+.second-btn {
+  background: transparent;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+.second-btn:hover {
+  background: var(--main-color);
+  color: #fff;
 }
 
 .more-btn {
@@ -1562,6 +1576,11 @@ body::-webkit-scrollbar-thumb {
   .video-button {
     width: 50px;
     height: 50px;
+  }
+
+  .btn--small {
+    padding: 10px 16px;
+    font-size: 14px;
   }
 }
 .site-header {
@@ -3789,6 +3808,17 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media all and (max-width: 575px) {
+  .certificate-cards {
+    margin: -5px;
+  }
+  .certificate-cards__item {
+    width: calc(50% - 10px);
+    margin: 5px;
+  }
+  .certificate-cards__content {
+    margin-top: 10px;
+  }
+
   .certificate-cards__image {
     height: 130px;
     border-radius: 10px;
@@ -4126,5 +4156,171 @@ body::-webkit-scrollbar-thumb {
 
   .guarantee-section .guarantee-block {
     margin-top: 30px;
+  }
+}
+.delivery-section {
+  position: relative;
+}
+
+.delivery-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px -10px;
+}
+.delivery-info__item {
+  width: calc(50% - 20px);
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.delivery-info__title {
+  color: var(--main-color);
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 600;
+}
+.delivery-info__text {
+  color: var(--black-color);
+  font-size: 16px;
+  line-height: 150%;
+}
+.delivery-info__text p {
+  margin: 10px 0;
+}
+.delivery-info__text p:last-child {
+  margin-bottom: 0;
+}
+.delivery-info__text ul {
+  margin: 10px 0;
+  padding-left: 15px;
+}
+.delivery-info__text ul:last-child {
+  margin-bottom: 0;
+}
+.delivery-info__text ul li {
+  margin: 5px 0;
+  list-style: disc;
+}
+.delivery-info__text ul li::marker {
+  font-size: 12px;
+  color: var(--red-color);
+}
+.delivery-info__image {
+  width: calc(50% - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.delivery-info__image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@media all and (max-width: 991px) {
+  .delivery-info__item {
+    width: calc(100% - 20px);
+  }
+
+  .delivery-info__image {
+    width: calc(100% - 20px);
+  }
+}
+.depth-map-section {
+  position: relative;
+}
+
+.depth-map {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 100%;
+  height: 560px;
+}
+.depth-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.documents-section {
+  position: relative;
+}
+
+.documents-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+.documents-cards__item {
+  width: calc(50% - 20px);
+  margin: 10px;
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 20px;
+  background: #fff;
+}
+.documents-cards__image {
+  width: 100px;
+  height: 140px;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #E3EDF8;
+}
+.documents-cards__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.documents-cards__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: 7px;
+}
+.documents-cards__title {
+  color: var(--black-color);
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 600;
+}
+.documents-cards__desc {
+  color: var(--black-color);
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.documents-cards__btn {
+  padding-top: 5px;
+  margin-top: auto;
+}
+
+@media all and (max-width: 1200px) {
+  .documents-cards__item {
+    padding: 20px;
+    gap: 20px;
+  }
+}
+@media all and (max-width: 991px) {
+  .documents-cards__item {
+    width: calc(100% - 20px);
+  }
+}
+@media all and (max-width: 575px) {
+  .documents-cards {
+    margin: -5px;
+  }
+  .documents-cards__item {
+    width: calc(100% - 10px);
+    margin: 5px;
+  }
+  .documents-cards__title {
+    font-size: 18px;
   }
 }

@@ -1,0 +1,15 @@
+.depth-map-section {
+	position: relative;
+}
+
+.depth-map {
+	position: relative;
+	overflow: hidden;
+	border-radius: 20px;
+	width: 100%;
+	height: 560px;
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+}
