@@ -161,4 +161,11 @@
 	.about-block__image-item {
 		height: 280px;
 	}
+	.checkmark-list {
+		gap: 5px;
+		&__item {
+			gap: 5px;
+			font-size: 12px;
+		}
+	}
 }

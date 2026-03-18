@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Project</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header site-header">
+	<div class="site-header__mobile">
+		<div class="header-logo header-logo--mobile">
+			<a href="/" class="header-logo__image">
+				<img src="img/logo.svg" alt="logo">
+			</a>
+		</div>
+		<a href="tel:+7 (499) 877 56 68" class="header-phone-mobile">
+			<i class="fa-solid fa-phone-volume"></i>
+		</a>
+		<button class="burger-button" type="button" title="menu">
+			<i class="fa-solid fa-bars"></i>
+		</button>
+	</div>
+	<div class="site-header__wrap">
+		<div class="site-header__main">
+			<div class="block-container">
+				<div class="header-logo header-logo--desktop">
+					<a href="/" class="header-logo__image">
+						<img src="img/logo.svg" alt="logo">
+					</a>
+					<span class="header-logo__delim"></span>
+					<div class="header-logo__desc">Инженерные <br>коммуникации</div>
+				</div>
+				<div class="header-bar">
+					<ul class="header-contacts">
+						<li class="header-contacts__item">
+							<span class="header-contacts__title">с 9:00 до 19:00</span>
+							<span class="header-contacts__desc">ежедневно</span>
+						</li>
+						<li class="header-contacts__item">
+							<a href="tel:+7 (499) 877 56 68" class="header-contacts__title">+7 (499) 877 56 68</a>
+							<a href="mailto:info@mosvodostroy.ru" class="header-contacts__desc">info@mosvodostroy.ru</a>
+						</li>
+					</ul>
+					<div class="social-buttons">
+						<a href="#" class="social-buttons__item">
+							<img src="img/icons/ws.svg" alt="Whatsapp">
+						</a>
+						<a href="#" class="social-buttons__item">
+							<img src="img/icons/tg.svg" alt="Telegram">
+						</a>
+					</div>
+					<a href="#modalCallback" class="btn main-btn" data-fancybox="">
+						<span class="btn-text">Заказать звонок</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="site-header__nav">
+			<div class="block-container">
+				<nav class="header-menu">
+					<ul class="services-menu">
+						<li>
+							<a href="#">Услуги</a>
+							<ul class="services-submenu">
+								<li class="services-submenu__item">
+									<a href="#" class="services-submenu__link">
+										<span class="services-submenu__icon">
+											<img src="img/menu/bur.svg" alt="icon">
+										</span>
+										<span class="services-submenu__value">Бурение скважин</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">Бурение скважин на воду под ключ</a>
+										</li>
+										<li>
+											<a href="#">Бурение артезианских скважин на воду</a>
+										</li>
+										<li>
+											<a href="#">Бурение скважин на песок</a>
+										</li>
+										<li>
+											<a href="#">Бурение малогабаритной установкой</a>
+										</li>
+										<li>
+											<a href="#">Бурение скважин на даче</a>
+										</li>
+										<li>
+											<a href="#">Карта глубин</a>
+										</li>
+									</ul>
+								</li>
+								<li class="services-submenu__item">
+									<a href="#" class="services-submenu__link">
+										<span class="services-submenu__icon">
+											<img src="img/menu/skvaj.svg" alt="icon">
+										</span>
+										<span class="services-submenu__value">Обустройство скважин</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">Обустройство скважины под ключ</a>
+										</li>
+										<li>
+											<a href="#">Обустройство скважины с кессоном</a>
+										</li>
+										<li>
+											<a href="#">Обустройство скважины с адаптером</a>
+										</li>
+										<li>
+											<a href="#">Обустройство артезианских скважин</a>
+										</li>
+										<li>
+											<a href="#">Обустройство песчаных скважин</a>
+										</li>
+									</ul>
+								</li>
+								<li class="services-submenu__item">
+									<a href="#" class="services-submenu__link">
+										<span class="services-submenu__icon">
+											<img src="img/menu/pogreb.svg" alt="icon">
+										</span>
+										<span class="services-submenu__value">Погреба</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">Погреб под ключ</a>
+										</li>
+										<li>
+											<a href="#">Погреб на дачу</a>
+										</li>
+										<li>
+											<a href="#">Станция очистки Топас</a>
+										</li>
+									</ul>
+								</li>
+								<li class="services-submenu__item">
+									<a href="#" class="services-submenu__link">
+										<span class="services-submenu__icon">
+											<img src="img/menu/kanal.svg" alt="icon">
+										</span>
+										<span class="services-submenu__value">Канализация</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">Канализация под ключ</a>
+										</li>
+										<li>
+											<a href="#">Септик под ключ</a>
+										</li>
+										<li>
+											<a href="#">Канализация на даче</a>
+										</li>
+										<li>
+											<a href="#">Станция очистки Тверь</a>
+										</li>
+										<li>
+											<a href="#">Канализация загородного дома</a>
+										</li>
+										<li>
+											<a href="#">Станция очистки Тверь Аэро</a>
+										</li>
+										<li>
+											<a href="#">Станция очистки БиоДека</a>
+										</li>
+										<li>
+											<a href="#">Септик Тверь Лайт</a>
+										</li>
+										<li>
+											<a href="#">Станция очистки Топас</a>
+										</li>
+									</ul>
+								</li>
+								<li class="services-submenu__item">
+									<a href="#" class="services-submenu__link">
+										<span class="services-submenu__icon">
+											<img src="img/menu/otoplen.svg" alt="icon">
+										</span>
+										<span class="services-submenu__value">Отопление</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">Установка электрического отопления</a>
+										</li>
+										<li>
+											<a href="#">Разводка отопления</a>
+										</li>
+										<li>
+											<a href="#">Газовое отопление частного дома</a>
+										</li>
+										<li>
+											<a href="#">Твердотопливное отопление дома</a>
+										</li>
+										<li>
+											<a href="#">Комбинированное отопление дома</a>
+										</li>
+										<li>
+											<a href="#">Отопление частного дома</a>
+										</li>
+									</ul>
+								</li>
+								<li class="services-submenu__item">
+									<a href="#" class="services-submenu__link">
+										<span class="services-submenu__icon">
+											<img src="img/menu/kluch.svg" alt="icon">
+										</span>
+										<span class="services-submenu__value">Скважина под ключ</span>
+									</a>
+									<ul>
+										<li>
+											<a href="#">Бурение скважин на воду — 200 м</a>
+										</li>
+										<li>
+											<a href="#">Бурение скважин на воду — 100 м</a>
+										</li>
+										<li>
+											<a href="#">Бурение скважин на воду — 80 м</a>
+										</li>
+										<li>
+											<a href="#">Бурение скважин на воду — 70 м</a>
+										</li>
+										<li>
+											<a href="#">Бурение скважин на воду — 60 м</a>
+										</li>
+										<li>
+											<a href="#">Бурение скважин на воду — 50 м</a>
+										</li>
+										<li>
+											<a href="#">Бурение скважин на воду — 30 м</a>
+										</li>
+										<li>
+											<a href="#">Бурение скважин на воду — 20 м</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#">Выполненные работы</a>
+						</li>
+						<li>
+							<a href="about-us.html">О компании</a>
+							<ul>
+								<li>
+									<a href="#">Основная информация</a>
+								</li>
+								<li>
+									<a href="payment.html">Способы оплаты</a>
+								</li>
+								<li>
+									<a href="guarantee.html">Гарантия</a>
+								</li>
+								<li>
+									<a href="#">Доставка</a>
+								</li>
+								<li>
+									<a href="#">Документы</a>
+								</li>
+								<li>
+									<a href="#">Партнеры</a>
+								</li>
+								<li>
+									<a href="#">Как заказать</a>
+								</li>
+								<li>
+									<a href="#">Наша техника</a>
+								</li>
+								<li>
+									<a href="#">Вопрос-ответ</a>
+								</li>
+								<li>
+									<a href="#">Реквизиты</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Отзывы</a>
+						</li>
+						<li>
+							<a href="#">Блог</a>
+						</li>
+						<li>
+							<a href="#">Каталог товаров</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+		<main class="main-content guarantee-page">
+			<div class="breadcrumbs-block">
+	<div class="block-container">
+		<div class="breadcrumbs">
+			<span>
+				<span>
+					<a href="/">Мосводострой</a>
+				</span>
+				>
+				<span>
+					<a href="">Раздел сайта</a>
+				</span>
+				>
+				<span>Внутренняя страница с длинным или коротким описанием</span>
+			</span>
+		</div>
+	</div>
+</div>
+			<section class="guarantee-section mb-100">
+	<div class="block-container">
+		<div class="block-heading">
+			<h1 class="block-heading__title">Мы предоставляем гарантии на такие виды работ и материалов:</h1>
+		</div>
+		<ul class="checkmark-list">
+			<li class="checkmark-list__item">Металлическая труба для скважины – 1 год</li>
+			<li class="checkmark-list__item">Металлическая и пластиковая трубы – 3 года</li>
+			<li class="checkmark-list__item">Кессон (металлический, пластиковый), адаптер – 1 год</li>
+			<li class="checkmark-list__item">Бурение с использованием цельнотянутой трубы – 10 лет</li>
+			<li class="checkmark-list__item">Обустройство колодца – 1-3 года</li>
+			<li class="checkmark-list__item">Канализация – 1 год (на монтажные работы)</li>
+		</ul>
+		<div class="guarantee-block">
+			<div class="guarantee-block__image">
+				<img src="img/guarantee.png" alt="guarantee">
+			</div>
+			<div class="guarantee-block__content">
+				<h2 class="guarantee-block__title">Предоставление гарантии от компании «Мосводострой»</h2>
+				<div class="guarantee-block__text">
+					<p>
+						Это подтверждение того, что мы строго придерживаемся правильных технологий выполнения каждого вида работ,
+						используем надежное оборудование и качественные материалы.
+					</p>
+					<p>Подробные условия гарантии прописаны в договоре.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="section cta-section mb-100">
+	<div class="block-container">
+		<div class="cta-block">
+			<div class="block-heading">
+				<h2 class="block-heading__title white">Оставьте заявку на бесплатную консультацию</h2>
+			</div>
+			<div class="cta-block__row">
+				<div class="cta-block__item">
+					<input type="text" placeholder="Ваше имя">
+				</div>
+				<div class="cta-block__item">
+					<input type="phone" placeholder="+7 (999) 000 00 00" required>
+				</div>
+				<div class="cta-block__submit">
+					<label class="btn main-btn">
+						<input type="submit" value="Получить смету">
+						<span class="btn-text">Отправить заявку</span>
+					</label>
+				</div>
+			</div>
+			<div class="cta-block__privacy cta-privacy">
+				<label>
+					<input type="checkbox" required="">
+					<span class="fake-checkbox"></span>
+					<span>
+						Даю согласие на обработку <a href="#">персональных данных</a>
+					</span>
+				</label>
+			</div>
+		</div>
+	</div>
+</section>
+		</main>
+		<footer class="footer site-footer">
+	<div class="block-container">
+		<div class="site-footer__body">
+			<div class="footer-logo">
+				<img src="img/logo-white.svg" alt="logo">
+			</div>
+			<nav class="footer-menu">
+				<ul>
+					<li>
+						<a href="#">О компании</a>
+						<ul>
+							<li>
+								<a href="#">Основная информация</a>
+							</li>
+							<li>
+								<a href="#">Способы оплаты</a>
+							</li>
+							<li>
+								<a href="#">Гарантия</a>
+							</li>
+							<li>
+								<a href="#">Доставка</a>
+							</li>
+							<li>
+								<a href="#">Документы</a>
+							</li>
+							<li>
+								<a href="#">Наши партнеры</a>
+							</li>
+							<li>
+								<a href="#">Как заказать</a>
+							</li>
+							<li>
+								<a href="#">Наша техника</a>
+							</li>
+							<li>
+								<a href="#">Вопрос-ответ</a>
+							</li>
+							<li>
+								<a href="#">Реквизиты</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Услуги</a>
+						<ul>
+							<li>
+								<a href="#">Бурение скважин</a>
+							</li>
+							<li>
+								<a href="#">Обустройство скважин</a>
+							</li>
+							<li>
+								<a href="#">Скважина под ключ</a>
+							</li>
+							<li>
+								<a href="#">Отопление</a>
+							</li>
+							<li>
+								<a href="#">Канализация </a>
+							</li>
+							<li>
+								<a href="#">Погреба </a>
+							</li>
+							<li>
+								<a href="#">Дренаж участка</a>
+							</li>
+							<li>
+								<a href="#">Карта глубин</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer-contacts">
+				<div class="footer-contacts__worktime">
+					<span class="footer-contacts__worktime-title">с 9:00 до 19:00</span>
+					<span class="footer-contacts__worktime-desc">ежедневно</span>
+				</div>
+				<div class="footer-contacts__links">
+					<a href="#" class="footer-contacts__links-item">+7 (499) 877 56 68</a>
+					<a href="#" class="footer-contacts__links-item">info@mosvodostroy.ru</a>
+				</div>
+				<ul class="footer-contacts__address">
+					<li class="footer-contacts__address-item">
+						<span class="footer-contacts__address-title">Центральный офис: </span>
+						<span class="footer-contacts__address-desc">Москва, пр. Мира, 102, корпус 1, офис 100</span>
+					</li>
+					<li class="footer-contacts__address-item">
+						<span class="footer-contacts__address-title">Офис Север: </span>
+						<span class="footer-contacts__address-desc">г. Пушкино. ул. 50 лет Комсомола 34, 2 этаж, офис 8</span>
+					</li>
+					<li class="footer-contacts__address-item">
+						<span class="footer-contacts__address-title">Офис Юг: </span>
+						<span class="footer-contacts__address-desc">село Красная Пахра, улица Почтовая 3А, строение 9</span>
+					</li>
+				</ul>
+			</div>
+			<div class="social-buttons">
+				<a href="#" class="social-buttons__item">
+					<img src="img/icons/ws.svg" alt="Whatsapp">
+				</a>
+				<a href="#" class="social-buttons__item">
+					<img src="img/icons/tg.svg" alt="Telegram">
+				</a>
+				<a href="#" class="social-buttons__item">
+					<img src="img/icons/vk.svg" alt="Vkontakte">
+				</a>
+			</div>
+			<div class="copyright-block">
+				<div class="site-copyright">
+					<span>© 1998-2025 «Мосводострой».</span>
+					<p>
+						Все права защищены. При копировании материалов сайта ссылка на источник обязательна.
+					</p>
+				</div>
+				<ul class="footer-links">
+					<li class="footer-links__item">
+						<a href="#" class="footer-links__value">Политика конфиденциальности</a>
+					</li>
+				</ul>
+				<ul class="study-copyright">
+					<li class="study-copyright__item">
+						<span class="study-copyright__title">Сделано в студии</span>
+						<a href="#" class="study-copyright__link">Арбуз</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+		<div class="modal modal-callback" id="modalCallback" style="display: none;">
+	<div class="modal-title">Оставьте заявку</div>
+	<form action="">
+		<div class="modal-form">
+			<div class="modal-form__item">
+				<input type="text" placeholder="Ваше имя">
+			</div>
+			<div class="modal-form__item">
+				<input type="phone" placeholder="+7 (999) 000 00 00" required>
+			</div>
+			<div class="modal-form__privacy cta-privacy">
+				<label>
+					<input type="checkbox" required="">
+					<span class="fake-checkbox"></span>
+					<span>
+						Даю согласие на обработку <a href="#">персональных данных</a>
+					</span>
+				</label>
+			</div>
+			<div class="modal-form__submit">
+				<label class="btn main-btn main-btn--red">
+					<input type="submit" value="Отправить">
+					<span class="btn-text">Отправить</span>
+				</label>
+			</div>
+		</div>
+	</form>
+</div>
+	</div>
+	<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+
+</html>
