@@ -31,6 +31,49 @@ jQuery(document).ready(function () {
 	});
 });
 
+// accordeon
+(function ($) {
+	// variables
+	var accordionBtn = document.querySelectorAll('.accordion-title');
+	var allTexts = document.querySelectorAll('.accordion .content');
+	var accIcon = document.querySelectorAll('.accordion-icon');
+
+	// event listener
+	accordionBtn.forEach(function (el) {
+		el.addEventListener('click', toggleAccordion)
+	});
+
+	// function
+	function toggleAccordion(el) {
+		var targetText = el.currentTarget.nextElementSibling.classList;
+		var targetAccIcon = el.currentTarget.children[0];
+		var target = el.currentTarget;
+
+		if (targetText.contains('show')) {
+			targetText.remove('show');
+			targetAccIcon.classList.remove('active');
+			target.classList.remove('active');
+		}
+		else {
+			accordionBtn.forEach(function (el) {
+				el.classList.remove('active');
+
+				allTexts.forEach(function (el) {
+					el.classList.remove('show');
+				})
+
+				accIcon.forEach(function (el) {
+					el.classList.remove('active');
+				})
+
+			})
+			targetText.add('show');
+			target.classList.add('active');
+			targetAccIcon.classList.add('active');
+		}
+	}
+})(jQuery);
+
 // custom checkbox
 /*
 document.querySelectorAll('.cta-privacy').forEach(block => {

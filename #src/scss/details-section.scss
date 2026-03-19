@@ -1,0 +1,32 @@
+.details-section {
+	position: relative;
+}
+
+.details-list {
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	overflow: hidden;
+	background: #fff;
+	&__item {
+		display: flex;
+		border-bottom: 1px solid #E7EFFF;
+		color: var(--black-color);
+		font-size: 16px;
+		line-height: 150%;
+		&:last-child {
+			border: none;
+		}
+	}
+	&__title {
+		font-weight: 700;
+		width: 270px;
+		flex: 0 0 auto;
+		padding: 17px 20px;
+		border-right: 1px solid #E7EFFF;
+	}
+	&__value {
+		font-weight: 400;
+		padding: 17px 20px;
+	}
+}
