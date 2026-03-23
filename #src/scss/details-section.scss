@@ -30,3 +30,29 @@
 		padding: 17px 20px;
 	}
 }
+
+@media all and (max-width: 991px) {
+	.details-list__item {
+		flex-direction: column;
+		gap: 3px;
+		padding: 15px;
+	}
+	.details-list__title {
+		padding: 0;
+		border: none;
+	}
+	.details-list__value {
+		padding: 0;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.details-section {
+		.block-heading {
+			.btn {
+				display: none;
+				visibility: hidden;
+			}
+		}
+	}
+}

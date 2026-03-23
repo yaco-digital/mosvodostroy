@@ -56,3 +56,12 @@ $('.logos-cards-slider').slick({
 		}
 	]
 });
+
+// projects-single-slider
+$('.projects-single-slider').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: true,
+	fade: true,
+	dots: false
+});
