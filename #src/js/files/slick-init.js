@@ -65,3 +65,12 @@ $('.projects-single-slider').slick({
 	fade: true,
 	dots: false
 });
+
+// product-gallery-slider
+$('.product-gallery-slider').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: true,
+	fade: true,
+	dots: false
+});
