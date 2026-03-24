@@ -61,6 +61,9 @@
 		font-size: 20px;
 		line-height: 130%;
 		font-weight: 600;
+		&.mt-0 {
+			margin-top: 0;
+		}
 	}
 	&__btn {
 		margin-top: 40px;
@@ -89,6 +92,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
+	&--screen {
+		padding: 30px;
+		border-radius: 20px;
+		background: #fff;
+	}
 	&__item {
 		display: flex;
 		align-items: center;
@@ -167,5 +175,8 @@
 			gap: 5px;
 			font-size: 12px;
 		}
+	}
+	.checkmark-list--screen {
+		padding: 15px;
 	}
 }

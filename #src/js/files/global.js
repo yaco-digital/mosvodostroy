@@ -74,6 +74,73 @@ jQuery(document).ready(function () {
 	}
 })(jQuery);
 
+// tabs
+jQuery('.tabgroup > div').removeClass('show');
+jQuery('.tabgroup > div:first-of-type').addClass('show');
+jQuery('.tabs > li:first-of-type a').addClass('active');
+jQuery('.tabs a').click(function (e) {
+	e.preventDefault();
+	let $this = $(this),
+		tabgroup = '#' + $this.parents('.tabs').data('tabgroup'),
+		others = $this.closest('li').siblings().children('a'),
+		target = $this.attr('href');
+	others.removeClass('active');
+	$this.addClass('active');
+	jQuery(tabgroup).children('div').removeClass('show');
+	jQuery(target).addClass('show');
+});
+
+// Карточки в услугах c расходниками
+document.querySelectorAll('.consumables-cards__item .btn').forEach(button => {
+	button.addEventListener('click', function () {
+		// Находим текущую карточку (родителя)
+		const card = this.closest('.consumables-cards__item');
+
+		// Берём заголовок внутри неё
+		const title = card.querySelector('.consumables-cards__title').textContent.trim();
+
+		// Вставляем в input
+		document.getElementById('consumables-name-input').value = title;
+		document.getElementById('consumables-name-text').textContent = title;
+	});
+});
+
+// Карточки в услугах c тарифами
+document.querySelectorAll('.tariff-cards__info').forEach(card => {
+	const btn = card.querySelector('.tariff-cards__info-btn');
+	const dropdown = card.querySelector('.tariff-cards__info-dropdown');
+
+	btn.addEventListener('click', () => {
+		const isOpen = dropdown.classList.contains('show');
+
+		// закрываем все
+		document.querySelectorAll('.tariff-cards__info-dropdown').forEach(d => d.classList.remove('show'));
+		document.querySelectorAll('.tariff-cards__info-btn').forEach(b => {
+			b.textContent = 'Развернуть подробное описание';
+		});
+
+		// открываем текущий если был закрыт
+		if (!isOpen) {
+			dropdown.classList.add('show');
+			btn.textContent = 'Скрыть описание';
+		}
+	});
+});
+
+document.querySelectorAll('.tariff-cards__item .btn').forEach(button => {
+	button.addEventListener('click', function () {
+		// Находим текущую карточку (родителя)
+		const card = this.closest('.tariff-cards__item');
+
+		// Берём заголовок внутри неё
+		const title = card.querySelector('.tariff-cards__title').textContent.trim();
+
+		// Вставляем в input
+		document.getElementById('tariff-name-input').value = title;
+		document.getElementById('tariff-name-text').textContent = title;
+	});
+});
+
 // custom checkbox
 /*
 document.querySelectorAll('.cta-privacy').forEach(block => {

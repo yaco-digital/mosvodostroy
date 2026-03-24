@@ -331,6 +331,9 @@
 	.header-menu ul {
 		gap: 20px;
 	}
+	.header-menu .services-submenu__item {
+		width: calc(50% - 20px);
+	}
 }
 
 .header-phone-mobile {

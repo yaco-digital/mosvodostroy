@@ -37,7 +37,6 @@ body {
 	margin-bottom: 40px;
 	&.flex {
 		display: flex;
-		align-items: center;
 		gap: 40px;
 		.block-heading__title {
 			width: 45%;
@@ -73,8 +72,23 @@ body {
 		color: var(--black-color);
 		font-size: 16px;
 		line-height: 150%;
-		p {
+		p, ul {
 			margin: 20px 0;
+			&:first-child,
+			&:last-child {
+				margin: 0;
+			}
+		}
+		ul {
+			padding-left: 15px;
+			li {
+				list-style: disc;
+				margin: 5px 0;
+				&::marker {
+					color: var(--red-color);
+					font-size: 12px;
+				}
+			}
 		}
 	}
 	.mt {
