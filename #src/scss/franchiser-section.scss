@@ -1,0 +1,61 @@
+.franchiser-section {
+	position: relative;
+}
+
+.franchiser-cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -10px;
+	&__item {
+		width: calc(33.33% - 20px);
+		margin: 10px;
+		padding: 30px;
+		border-radius: 20px;
+		gap: 12px;
+		display: flex;
+		flex-direction: column;
+		background: #fff;
+	}
+	&__title {
+		color: var(--main-color);
+		font-size: 20px;
+		line-height: 130%;
+		font-weight: 600;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		&-item {
+			color: var(--black-color);
+			font-size: 16px;
+			line-height: 150%;
+		}
+		&-value {
+			font-weight: 400;
+		}
+	}
+}
+
+@media all and (max-width: 991px) {
+	.franchiser-cards__item {
+		width: calc(50% - 20px);
+	}
+}
+
+@media all and (max-width: 768px) {
+	.franchiser-cards__item {
+		width: calc(100% - 20px);
+	}
+}
+
+@media all and (max-width: 575px) {
+	.franchiser-cards {
+		margin: -5px;
+		&__item {
+			width: calc(100% - 10px);
+			margin: 5px;
+			padding: 20px;
+			border-radius: 15px;
+		}
+	}
+}
