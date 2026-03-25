@@ -5,25 +5,110 @@
 })
 
 <body>
-	<div class="wrapper">
-		@@include('_header.html',{})
-		<main class="main-content home-page">
-			@@include('_hero-section.html',{})
-			@@include('_services-section.html',{})
-			@@include('_about-section.html',{})
-			@@include('_cta-section.html',{})
-			@@include('_projects-section.html',{})
-			@@include('_benefits-section.html',{})
-			@@include('_about-section-2.html',{})
-			@@include('_reviews-section.html',{})
-			@@include('_logos-section.html',{})
-			@@include('_certificate-section.html',{})
-			@@include('_cta-section.html',{})
-		</main>
-		@@include('_footer.html',{})
-		@@include('_modal-callback.html',{})
-	</div>
-	@@include('_js.html',{})
+	<style>
+		.nav-for-pages {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			gap: 20px;
+			padding: 30px 20px;
+		}
+
+		.nav-for-pages li::marker {
+			color: var(--red-color);
+			font-weight: 600;
+		}
+
+		.nav-for-pages a {
+			color: var(--main-color);
+			font-size: 18px;
+		}
+	</style>
+	<ol class="nav-for-pages">
+		<li>
+			<a href="home.html">Главная страница</a>
+		</li>
+		<li>
+			<a href="about-us.html">О компании</a>
+		</li>
+		<li>
+			<a href="payment.html">Способы оплаты</a>
+		</li>
+		<li>
+			<a href="guarantee.html">Гарантия</a>
+		</li>
+		<li>
+			<a href="delivery.html">Доставка</a>
+		</li>
+		<li>
+			<a href="depth-map.html">Карта глубин</a>
+		</li>
+		<li>
+			<a href="documents.html">Документы</a>
+		</li>
+		<li>
+			<a href="partners.html">Наши партнеры</a>
+		</li>
+		<li>
+			<a href="scheme.html">Как заказать</a>
+		</li>
+		<li>
+			<a href="equipment.html">Наша техника</a>
+		</li>
+		<li>
+			<a href="faq.html">Вопрос-ответ</a>
+		</li>
+		<li>
+			<a href="details.html">Реквизиты</a>
+		</li>
+		<li>
+			<a href="error.html">404</a>
+		</li>
+		<li>
+			<a href="single.html">Политика + стандартный шаблон</a>
+		</li>
+		<li>
+			<a href="projects.html">Выполненные работы</a>
+		</li>
+		<li>
+			<a href="projects-single.html">Работа</a>
+		</li>
+		<li>
+			<a href="reviews.html">Отзывы</a>
+		</li>
+		<li>
+			<a href="reviews-single.html">Отзыв текст</a>
+		</li>
+		<li>
+			<a href="reviews-single-video.html">Отзыв видео</a>
+		</li>
+		<li>
+			<a href="services.html">Услуги</a>
+		</li>
+		<li>
+			<a href="services-single.html">Услуга (шаблон страницы)</a>
+		</li>
+		<li>
+			<a href="blog.html">Блог</a>
+		</li>
+		<li>
+			<a href="blog-single.html">Страница статьи</a>
+		</li>
+		<li>
+			<a href="catalog.html">Каталог</a>
+		</li>
+		<li>
+			<a href="catalog-2.html">Каталог (категории)</a>
+		</li>
+		<li>
+			<a href="product.html">Товар</a>
+		</li>
+		<li>
+			<a href="contacts.html">Контакты</a>
+		</li>
+	</ol>
 </body>
 
 </html>
