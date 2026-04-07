@@ -4,4 +4,282 @@
 			<h2 class="block-heading__title">Калькулятор скважины</h2>
 		</div>
 	</div>
+
+	<div class="block-container" id="calculate">
+		<div class="calculate">
+			<form action="" class="calculate-body amo-form" method="post">
+				<div class="slide-navigation">
+					<div class="item active" data-step="1">
+						<div class="number">1 Шаг</div>
+						<div class="text">Тип скважины: <span class="info-type">-</span></div>
+					</div>
+					<div class="item" data-step="2">
+						<div class="number">2 Шаг</div>
+						<div class="text">Район бурения: <span class="info-region">-</span></div>
+					</div>
+					<div class="item" data-step="3">
+						<div class="number">3 Шаг</div>
+						<div class="text">Тип обсадной трубы: <span class="info-tube">-</span></div>
+					</div>
+					<div class="item" data-step="4">
+						<div class="number">4 Шаг</div>
+						<div class="text">Глубина скважины: <span class="info-depth">-</span></div>
+					</div>
+					<div class="item" data-step="5">
+						<div class="number">5 Шаг</div>
+						<div class="text">Расчет стоимости</div>
+					</div>
+				</div>
+				<div class="slides">
+					<div class="item" data-slide="1">
+						<div class="name">Выберите тип скважины</div>
+
+						<div class="slide1">
+							<div class="element element-img" data-type="1">
+								<img src="/wp-content/themes/mosvodostroj/images/calculate-slider1-1.jpg">
+								<span>Артезианская скважина</span>
+							</div>
+							<div class="element element-img" data-type="2">
+								<img src="/wp-content/themes/mosvodostroj/images/calculate-slider1-2.jpg">
+								<span>Скважина на песок</span>
+							</div>
+						</div>
+						<div class="slides-navigation">
+							<button class="btn main-btn next" data-step="2">
+								<span class="btn-text">Следующий шаг</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="item" data-slide="2" hidden>
+						<div class="name">Выберите район</div>
+						<div class="slide2">
+							<div class="element element-list">
+								<span data-range="60-80" data-depth="65" data-squeak-price="2500" data-squeak-range="20-30"
+									data-squeak-depth="25" data-expensive="0">Балашихинский</span>
+								<span data-range="40-120" data-depth="70" data-squeak-price="2500" data-squeak-range="20-40"
+									data-squeak-depth="30" data-expensive="100">Волоколамский</span>
+								<span data-range="20-90" data-depth="55" data-squeak-price="2500" data-squeak-range="10-25"
+									data-squeak-depth="20" data-expensive="0">Воскресенский</span>
+								<span data-range="120-220" data-depth="160" data-squeak-price="2500" data-squeak-range="15-60"
+									data-squeak-depth="30" data-expensive="100">Дмитровский</span>
+								<span data-range="40-90" data-depth="50" data-squeak-price="2500" data-squeak-range="10-40"
+									data-squeak-depth="25" data-expensive="0">Домодедовский</span>
+								<span data-range="60-100" data-depth="80" data-squeak-price="2500" data-squeak-range="10-35"
+									data-squeak-depth="25" data-expensive="0">Егорьевский</span>
+								<span data-range="40-120" data-depth="60" data-squeak-price="2600" data-squeak-range="10-35"
+									data-squeak-depth="25" data-expensive="200">Зарайский</span>
+								<span data-range="80-130" data-depth="100" data-squeak-price="2500" data-squeak-range="15-60"
+									data-squeak-depth="35" data-expensive="0">Истринский</span>
+								<span data-range="40-100" data-depth="50" data-squeak-price="2600" data-squeak-range="10-30"
+									data-squeak-depth="20" data-expensive="200">Каширский</span>
+								<span data-range="70-140" data-depth="100" data-squeak-price="2500" data-squeak-range="10-60"
+									data-squeak-depth="40" data-expensive="0">Клинский</span>
+								<span data-range="30-100" data-depth="50" data-squeak-price="2500" data-squeak-range="10-35"
+									data-squeak-depth="25" data-expensive="0">Коломенский</span>
+								<span data-range="60-120" data-depth="80" data-squeak-price="2500" data-squeak-range="12-35"
+									data-squeak-depth="20" data-expensive="0">Красногорский</span>
+								<span data-range="60-120" data-depth="100" data-squeak-price="2500" data-squeak-range="10-40"
+									data-squeak-depth="25" data-expensive="200">Ленинский</span>
+								<span data-range="50-100" data-depth="80" data-squeak-price="2600" data-squeak-range="15-35"
+									data-squeak-depth="25" data-expensive="0">Лотошинский</span>
+								<span data-range="50-100" data-depth="60" data-squeak-price="2500" data-squeak-range="10-35"
+									data-squeak-depth="25" data-expensive="0">Луховицкий</span>
+								<span data-range="40-80" data-depth="50" data-squeak-price="2500" data-squeak-range="10-25"
+									data-squeak-depth="20" data-expensive="0">Люберецкий</span>
+								<span data-range="50-120" data-depth="80" data-squeak-price="2500" data-squeak-range="15-35"
+									data-squeak-depth="25" data-expensive="0">Можайский</span>
+								<span data-range="70-120" data-depth="90" data-squeak-price="2500" data-squeak-range="15-45"
+									data-squeak-depth="30" data-expensive="0">Мытищинский</span>
+								<span data-range="30-70" data-depth="50" data-squeak-price="2500" data-squeak-range="10-30"
+									data-squeak-depth="20" data-expensive="0">Наро-Фоминский</span>
+								<span data-range="30-70" data-depth="50" data-squeak-price="2500" data-squeak-range="25-35"
+									data-squeak-depth="30" data-expensive="0">Можайский</span>
+								<span data-range="20-70" data-depth="40" data-squeak-price="2500" data-squeak-range="5-20"
+									data-squeak-depth="15" data-expensive="0">Ногинский</span>
+								<span data-range="70-130" data-depth="100" data-squeak-price="2500" data-squeak-range="12-60"
+									data-squeak-depth="35" data-expensive="0">Одинцовский</span>
+								<span data-range="25-50" data-depth="40" data-squeak-price="2500" data-squeak-range="10-20"
+									data-squeak-depth="15" data-expensive="100">Озерский</span>
+								<span data-range="40-70" data-depth="50" data-squeak-price="2500" data-squeak-range="10-30"
+									data-squeak-depth="20" data-expensive="0">Орехово-Зуево</span>
+								<span data-range="20-70" data-depth="50" data-squeak-price="2500" data-squeak-range="10-20"
+									data-squeak-depth="15" data-expensive="0">Павлово-Посадский</span>
+								<span data-range="30-85" data-depth="55" data-squeak-price="2500" data-squeak-range="15-30"
+									data-squeak-depth="25" data-expensive="0">Подольский</span>
+								<span data-range="70-100" data-depth="80" data-squeak-price="2500" data-squeak-range="10-40"
+									data-squeak-depth="25" data-expensive="0">Пушкинский</span>
+								<span data-range="30-70" data-depth="60" data-squeak-price="2500" data-squeak-range="5-30"
+									data-squeak-depth="20" data-expensive="0">Раменский</span>
+								<span data-range="40-100" data-depth="70" data-squeak-price="2500" data-squeak-range="10-30"
+									data-squeak-depth="20" data-expensive="0">Рузский</span>
+								<span data-range="100-220" data-depth="180" data-squeak-price="2500" data-squeak-range="15-45"
+									data-squeak-depth="30" data-expensive="100">Сергиево-Посадский</span>
+								<span data-range="20-70" data-depth="35" data-squeak-price="2600" data-squeak-range="5-20"
+									data-squeak-depth="15" data-expensive="200">Серебряно-Прудский</span>
+								<span data-range="45-120" data-depth="50" data-squeak-price="2500" data-squeak-range="15-30"
+									data-squeak-depth="25" data-expensive="100">Серпуховский</span>
+								<span data-range="80-200" data-depth="110" data-squeak-price="2500" data-squeak-range="20-50"
+									data-squeak-depth="35" data-expensive="0">Солнечногорский</span>
+								<span data-range="30-70" data-depth="50" data-squeak-price="2500" data-squeak-range="10-25"
+									data-squeak-depth="20" data-expensive="100">Ступинский</span>
+								<span data-range="90-120" data-depth="100" data-squeak-price="2500" data-squeak-range="15-40"
+									data-squeak-depth="30" data-expensive="100">Талдомский</span>
+								<span data-range="80-100" data-depth="80" data-squeak-price="2500" data-squeak-range="25-30"
+									data-squeak-depth="30" data-expensive="0">Химкинский</span>
+								<span data-range="30-60" data-depth="40" data-squeak-price="2500" data-squeak-range="10-20"
+									data-squeak-depth="15" data-expensive="0">Чеховский</span>
+								<span data-range="90-140" data-depth="90" data-squeak-price="2500" data-squeak-range="15-30"
+									data-squeak-depth="25" data-expensive="0">Шатурский</span>
+								<span data-range="70-130" data-depth="90" data-squeak-price="2600" data-squeak-range="15-40"
+									data-squeak-depth="30" data-expensive="200">Шаховской</span>
+								<span data-range="40-80" data-depth="45" data-squeak-price="2500" data-squeak-range="10-35"
+									data-squeak-depth="25" data-expensive="0">Щелковсий</span>
+							</div>
+							<input type="text" id="input-region" name="region" placeholder="Если района нет в списке, введите сюда">
+						</div>
+						<div class="slides-navigation">
+							<button class="btn second-btn prev" data-step="1">
+								<span class="btn-text">Предыдущий шаг</span>
+							</button>
+							<button class="btn main-btn next" data-step="3">
+								<span class="btn-text">Следующий шаг</span>
+							</button>
+						</div>
+					</div>
+					<div class="item" data-slide="3" hidden>
+						<div class="name">Выберите тип и диаметр обсадной трубы</div>
+						<div class="slide3">
+							<div class="element element-img dis"
+								data-price="<?php query_posts('post_type=stoimost-uslug&p=7717'); if (have_posts()) : while (have_posts()) : the_post();  the_field('usluga_price_quiz'); endwhile; endif; ?>">
+								<div class="image" data-img="/wp-content/themes/mosvodostroj/images/calculate-slider3-1.jpg"
+									style="background-image:url('/wp-content/themes/mosvodostroj/images/calculate-slider3-1.jpg');"></div>
+								<span>Стальная труба ∅133мм</span>
+							</div>
+							<div class="element element-img dis"
+								data-price="<?php query_posts('post_type=stoimost-uslug&p=7720'); if (have_posts()) : while (have_posts()) : the_post();  the_field('usluga_price_quiz'); endwhile; endif; ?>">
+								<div class="image" data-img="/wp-content/themes/mosvodostroj/images/calculate-slider3-2.jpg"
+									style="background-image:url('/wp-content/themes/mosvodostroj/images/calculate-slider3-2.jpg');"></div>
+								<span>Стальная труба ∅133мм и ПНД труба ∅117</span>
+							</div>
+							<div class="element element-img enabled"
+								data-price="<?php query_posts('post_type=stoimost-uslug&p=7718'); if (have_posts()) : while (have_posts()) : the_post();  the_field('usluga_price_quiz'); endwhile; endif; ?>">
+								<div class="image" data-img="/wp-content/themes/mosvodostroj/images/calculate-slider3-3.jpg"
+									style="background-image:url('/wp-content/themes/mosvodostroj/images/calculate-slider3-3.jpg');"></div>
+								<span>Труба нПВХ труба ∅125</span>
+							</div>
+							<div class="element element-img dis"
+								data-price="<?php query_posts('post_type=stoimost-uslug&p=7935'); if (have_posts()) : while (have_posts()) : the_post();  the_field('usluga_price_quiz'); endwhile; endif; ?>">
+								<!-- скважина на песок -->
+								<div class="image" data-img="/wp-content/themes/mosvodostroj/images/calculate-slider3-2.jpg"
+									style="background-image:url('/wp-content/themes/mosvodostroj/images/calculate-slider3-2.jpg');"></div>
+								<span>Цельнотянутая стальная труба Ø133мм + ПНД труба Ø117мм</span>
+							</div>
+						</div>
+						<div class="slides-navigation">
+							<button class="btn second-btn prev" data-step="2">
+								<span class="btn-text">Предыдущий шаг</span>
+							</button>
+							<button class="btn main-btn next" data-step="4">
+								<span class="btn-text">Следующий шаг</span>
+							</button>
+						</div>
+					</div>
+					<div class="item" data-slide="4" hidden>
+						<div class="name">Введите глубину Вашей скважины</div>
+						<div class="slide4">
+							<div class="item">
+								<input type="text" id="depth-input" name="depth" placeholder="Глубина, м">
+							</div>
+							<div class="item">
+								Средняя глубина скважины в Вашем районе <span id="avg-depth">56</span> м. <br />Глубина скважин в этом
+								районе варьируется в диапазоне <span id="avg-range">56</span> м.
+							</div>
+						</div>
+						<div class="slides-navigation">
+							<button class="btn second-btn prev" data-step="3">
+								<span class="btn-text">Предыдущий шаг</span>
+							</button>
+							<button class="btn main-btn next" data-step="5">
+								<span class="btn-text">Следующий шаг</span>
+							</button>
+						</div>
+					</div>
+					<div class="item" data-slide="5" hidden>
+						<div class="name">Расчет стоимости</div>
+						<div class="slide5">
+							<div class="result">
+								<div class="image">
+									<img id="tube-image" src="" width="100%">
+								</div>
+								<div class="info">
+									<div class="info-name info-type">Артезианская скважина</div>
+									<div class="info-parameter">Район: <span class="info-region">Пушкинский</span></div>
+									<div class="info-parameter">Тип трубы: <span class="info-tube">Металлическая труба Ø133мм</span></div>
+									<div class="info-parameter">Глубина скважины: <span class="info-depth">65 м</span></div>
+								</div>
+								<div class="price">
+									<div class="price-name">Ориентировочная стоимость:</div>
+									<div class="price-value"><span id="total-price">68 000</span> руб.</div>
+								</div>
+							</div>
+							<div class="order">
+								<!-- Скрытые инпуты -->
+								<input type="hidden" name="type" id="input-type">
+								<input type="hidden" name="tube" id="input-tube">
+								<input type="hidden" name="price" id="input-price">
+								<!-- Результирующий input -->
+								<input type="hidden" name="result" id="input-result">
+
+								<!-- Поля для CRM -->
+								<input type="hidden" name="frmSubject" value="Калькулятор - бурение скважины">
+								<input type="hidden" name="frmTags" value="САЙТ,Рассчитать">
+
+								<div class="cta-block">
+									<div class="block-heading">
+										<h2 class="block-heading__title order-title white">Заказать бурение</h2>
+									</div>
+									<div class="cta-block__row">
+										<div class="cta-block__item">
+											<input type="text" name="phone" class="phone" id="input-phone" placeholder="Ваш телефон"
+												required="">
+										</div>
+										<div class="cta-block__submit">
+											<label class="btn main-btn">
+												<input type="submit" class="btn" value="Заказать" id="input-submit">
+												<span class="btn-text">Получить смету</span>
+											</label>
+										</div>
+									</div>
+									<div class="cta-block__privacy cta-privacy">
+										<label>
+											<input type="checkbox" id="calculate-check-obustrojstvo">
+											<span class="fake-checkbox"></span>
+											<span>
+												Узнать стоимость обустройства
+											</span>
+										</label>
+									</div>
+									<div class="cta-block__privacy cta-privacy">
+										<label>
+											<input type="checkbox" id="calculate-check" checked required name="agree">
+											<span class="fake-checkbox"></span>
+											<span>
+												Даю согласие на обработку <a href="#">персональных данных</a>
+											</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slides-navigation">
+							<button class="btn second-btn prev" data-step="4">
+								<span class="btn-text">Предыдущий шаг</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
 </section>
